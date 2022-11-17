@@ -4,15 +4,15 @@ import os
 
 
 class Config(object):
-	API_ID = int(os.environ.get("API_ID", "0"))
-	API_HASH = os.environ.get("API_HASH")
-	BOT_TOKEN = os.environ.get("BOT_TOKEN")
-	BOT_USERNAME = os.environ.get("BOT_USERNAME")
-	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-100"))
-	BOT_OWNER = int(os.environ.get("BOT_OWNER", "1445283714"))
-	DATABASE_URL = os.environ.get("DATABASE_URL")
-	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "")
-	LOG_CHANNEL = os.environ.get("LOG_CHANNEL", None)
+	API_ID = 24175736
+	API_HASH = 77fc2e0bf116bb5f07d0fd3c1d77f1f8
+	BOT_TOKEN = 5763765991:AAEvuQGurfpPh9X_iieW-atzbyoC5HLcBW0
+	BOT_USERNAME = javis_file_sharing_bot
+	DB_CHANNEL = -1001875042320
+	BOT_OWNER = 5101306897
+	DATABASE_URL = mongodb+srv://boss:botay123@cluster0.3nynm7c.mongodb.net/?retryWrites=true&w=majority
+	UPDATES_CHANNEL = -1001875042320
+	LOG_CHANNEL = -1001875042320
 	BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "1234567890").split())
 	FORWARD_AS_COPY = bool(os.environ.get("FORWARD_AS_COPY", True))
 	BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False))
